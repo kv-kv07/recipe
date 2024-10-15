@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Recipe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="recipe-card">
+        <h1>Tea</h1>
+        
+        <div class="image-container">
+            <img src="teas.jpg" alt="Cup of Tea">
+        </div>
+
+        <div class="details">
+            <p>Preparation time: 10 minutes | Servings: 2</p>
+        </div>
+
+        <div class="ingredients">
+            <button id="toggle-ingredients">Show Ingredients</button>
+            <ul id="ingredients-list" class="hidden">
+                <li>2 cups of water</li>
+                <li>1 tsp tea leaves</li>
+                <li>1 tsp sugar (optional)</li>
+                <li>1 tsp milk (optional)</li>
+                <li>1 slice of lemon (optional)</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <button id="start-cooking">Start Cooking</button>
+            <ul id="steps-list">
+                <li>Boil 2 cups of water in a pot.</li>
+                <li>Add 1 tsp of tea leaves and simmer for 2-3 minutes.</li>
+                <li>Strain the tea into a cup.</li>
+                <li>Add sugar, milk, or lemon as per your preference.</li>
+                <li>Stir and serve hot.</li>
+            </ul>
+        </div>
+
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+    </div>
+
+    <script src="scrip.js"></script>
+</body>
+</html>
