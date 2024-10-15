@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.recipe-card {
+    width: 90%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.details {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.ingredients {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#ingredients-list {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#steps-list {
+    margin-top: 20px;
+    list-style: none;
+}
+
+#steps-list li {
+    padding: 10px 0;
+    opacity: 0.6;
+}
+
+#steps-list li.active {
+    opacity: 1;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+#progress {
+    height: 10px;
+    width: 0;
+    background-color: #333;
+    transition: width 0.3s;
+}
+
+/* Hover effects */
+#ingredients-list li:hover {
+    text-decoration: underline;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .recipe-card {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
