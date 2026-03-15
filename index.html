@@ -1,43 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea Recipe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="recipe-card">
         <h1>Tea</h1>
-        
+
         <div class="image-container">
             <img src="teas.jpg" alt="Cup of Tea">
         </div>
 
         <div class="details">
-            <p>Preparation time: 10 minutes | Servings: 2</p>
+            <span class="badge">⏱️ 10 mins</span>
+            <span class="badge">🍽️ 2 Servings</span>
         </div>
 
         <div class="ingredients">
-            <button id="toggle-ingredients">Show Ingredients</button>
-            <ul id="ingredients-list" class="hidden">
-                <li>2 cups of water</li>
-                <li>1 tsp tea leaves</li>
-                <li>1 tsp sugar (optional)</li>
-                <li>1 tsp milk (optional)</li>
-                <li>1 slice of lemon (optional)</li>
+            <button id="toggle-ingredients" class="btn outline">Show Ingredients</button>
+            <ul id="ingredients-list" class="hidden recipe-list">
+                <li><span class="bullet"></span> 2 cups of water</li>
+                <li><span class="bullet"></span> 1 tsp tea leaves</li>
+                <li><span class="bullet"></span> 1 tsp sugar (optional)</li>
+                <li><span class="bullet"></span> 1 tsp milk (optional)</li>
+                <li><span class="bullet"></span> 1 slice of lemon (optional)</li>
             </ul>
         </div>
 
+        <hr class="divider">
+
         <div class="instructions">
             <h2>Instructions</h2>
-            <button id="start-cooking">Start Cooking</button>
-            <ul id="steps-list">
-                <li>Boil 2 cups of water in a pot.</li>
-                <li>Add 1 tsp of tea leaves and simmer for 2-3 minutes.</li>
-                <li>Strain the tea into a cup.</li>
-                <li>Add sugar, milk, or lemon as per your preference.</li>
-                <li>Stir and serve hot.</li>
+            <button id="start-cooking" class="btn primary">Start Cooking</button>
+            <ul id="steps-list" class="recipe-list mt-top">
+                <li>
+                    <div class="step-num">1</div> Boiling 2 cups of water in a pot.
+                </li>
+                <li>
+                    <div class="step-num">2</div> Add 1 tsp of tea leaves and simmer for 2-3 minutes.
+                </li>
+                <li>
+                    <div class="step-num">3</div> Strain the tea into a cup.
+                </li>
+                <li>
+                    <div class="step-num">4</div> Add sugar, milk, or lemon as per your preference.
+                </li>
+                <li>
+                    <div class="step-num">5</div> Stir and serve hot.
+                </li>
             </ul>
         </div>
 
@@ -48,4 +66,5 @@
 
     <script src="scrip.js"></script>
 </body>
+
 </html>
